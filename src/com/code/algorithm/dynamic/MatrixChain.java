@@ -18,7 +18,7 @@ public class MatrixChain {
         for (int n = 1; n < a.length; n++) {
             for (int i = 1; i+n < a.length; i++) {
                 j = i+n;
-                c[i][j] = Integer.MAX_VALUE;
+                c[i][j] = Integer.MAX_VALUE; 
                 for (int k = i; k < j; k++) {
                     temp = c[i][k] + c[k+1][j] + a[i-1]*a[k]*a[j];
                     if (temp < c[i][j]) {
